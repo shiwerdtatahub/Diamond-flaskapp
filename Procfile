@@ -1,0 +1,1 @@
+web: ginicorn diamond:app --log-file -

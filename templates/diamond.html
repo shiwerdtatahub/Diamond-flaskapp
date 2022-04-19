@@ -318,7 +318,10 @@ footer {
                 <span class="screen__background__shape screen__background__shape1"></span>
             </div>		
         </div>
-        <h2> Price of the diamonds is:$ {{result}} </h2><br>
+        {% for message in get_flashed_messages()%}
+            <h2> {{messages}} ${{result}} </h2>
+            
+        {% endfor%}
     </div>
 </body>
 </html>
